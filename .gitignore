@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Directorio opcional de npm para cache
+.npm
+
+# Archivos de entorno
+.env
+
+# Directorio opcional de yarn para cache
+.yarn-cache
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+*.swp
