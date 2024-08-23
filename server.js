@@ -11,12 +11,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Conexión a MongoDB
-mongoose.connect('mongodb+srv://soportetecnico3499:QlmQc4bvfyUlDocO@cluster0.nwp5l.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect('mongodb+srv://soportetecnico3499:QlmQc4bvfyUlDocO@cluster0.nwp5l.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log('MongoDB connected...'))
 .catch(err => console.log(err));
+
 
 // Usa las rutas del juego
 app.use('/api/game', gameRoutes);  // Este es el endpoint base para las rutas del juego
