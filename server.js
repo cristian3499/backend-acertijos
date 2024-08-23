@@ -11,7 +11,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Conexión a MongoDB
-mongoose.connect('mongodb://localhost/acertijoGame', {
+mongoose.connect('mongodb+srv://soportetecnico3499:QlmQc4bvfyUlDocO@cluster0.nwp5l.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
