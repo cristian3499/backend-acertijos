@@ -12,9 +12,13 @@ app.use(bodyParser.json());
 
 // Conexión a MongoDB
 mongoose.connect('mongodb+srv://soportetecnico3499:QlmQc4bvfyUlDocO@cluster0.nwp5l.mongodb.net/mydatabase?retryWrites=true&w=majority&appName=Cluster0')
-.then(() => console.log('MongoDB connected...'))
-.catch(err => console.log(err));
+    .then(() => console.log('MongoDB connected...'))
+    .catch(err => console.log(err));
 
+// Manejar la ruta raíz y enviar una respuesta
+app.get('/', (req, res) => {
+    res.send('Bienvenido al servidor del juego de acertijos');
+});
 
 // Usa las rutas del juego
 app.use('/api/game', gameRoutes);  // Este es el endpoint base para las rutas del juego
